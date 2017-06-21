@@ -108,7 +108,7 @@ public class MIDIManager : MonoBehaviour {
     {
         midiDebugText.text = debugStringText;
 
-        midiSummary.text = string.Format("CH {0}\nCMD {1}\nDATA1 {2}\nDATA2 {3}", midiChannel, midiCommand, midiData1, midiData2);
+        //midiSummary.text = string.Format("CH {0}\nCMD {1}\nDATA1 {2}\nDATA2 {3}", midiChannel, midiCommand, midiData1, midiData2);
 
         midiTextChannel.text = midiChannel;
         midiTextCommand.text = midiCommand;
@@ -260,7 +260,7 @@ public class MIDIManager : MonoBehaviour {
     private void LogDebug(string message)
     {
         Debug.Log(message);
-        debugStringText += message + "\n";
+        debugStringText = message + "\n";
     }
 
     private void ClearLogText()

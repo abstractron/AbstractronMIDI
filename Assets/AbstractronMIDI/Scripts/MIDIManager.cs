@@ -82,7 +82,9 @@ public class MIDIManager : MonoBehaviour {
             isDirty = false;
         }
         
+        /*
         OutputToDevice();
+        */
     }
 
     private void OutputToDevice()
